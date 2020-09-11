@@ -43,6 +43,7 @@ public class Main {
 				case 5:
 					if(carteira != null)
 						Arquivo.gerarCSV(carteira.getInvestimentos());
+					break;
 				case 0:
 					break;
 			}
