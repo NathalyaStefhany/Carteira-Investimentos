@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 import model.interfaces.InvestimentoFactory;
 
+// Ctrl + shift + o -> tira os import que não tão sendo utilizados
+
 public class Carteira {
 	private String corretora;
 	private double valorInvestido;

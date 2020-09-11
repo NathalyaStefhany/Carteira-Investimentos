@@ -22,7 +22,7 @@ public class TesteArquivo {
 	
 	@Before
 	public void init() {
-		// Faz a instância
+		// Faz a instânciação do objeto
 		carteira = new Carteira("Rico Investimentos");
 		rendaFixa = new RendaFixa("Tesouro Selic 2025", new Date(), 78.65, 50, "20/10/2025", 2.75);
 		//jsonFile = new File("Investimentos.json");
