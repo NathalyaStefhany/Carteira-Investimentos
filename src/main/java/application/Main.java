@@ -3,6 +3,7 @@ package application;
 import java.util.Scanner;
 
 import model.arquivos.Arquivo;
+import model.arquivos.CsvStrategy;
 import model.entities.Carteira;
 import model.entities.Investimento;
 import model.entities.RendaFixa;
@@ -15,6 +16,8 @@ public class Main {
 		int op = -1;
 		
 		Carteira carteira = null;
+		
+		Arquivo arquivo = new Arquivo();
 		
 		while(op != 0) {
 			System.out.println("[1] Criar Carteira");
@@ -38,11 +41,13 @@ public class Main {
 					break;
 				case 4:
 					if(carteira != null)
-						Arquivo.gerarJson(carteira.getInvestimentos());
+						arquivo.gerar(carteira.getInvestimentos());
 					break;
 				case 5:
-					if(carteira != null)
-						Arquivo.gerarCSV(carteira.getInvestimentos());
+					if(carteira != null) {
+						arquivo.setArquivoStrategy(new CsvStrategy());
+						arquivo.gerar(carteira.getInvestimentos());
+					}
 					break;
 				case 0:
 					break;
