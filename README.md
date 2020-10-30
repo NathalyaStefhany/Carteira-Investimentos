@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/NathalyaStefhany/Carteira-Investimentos.svg?branch=master)](https://travis-ci.org/NathalyaStefhany/Carteira-Investimentos)
+
 # Controle de Investimentos
 Aplicação sendo desenvolvida no laboratório de Engenharia de Software - C214
 
